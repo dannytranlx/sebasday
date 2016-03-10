@@ -10,13 +10,22 @@ body {
     padding-bottom: 20px;
 }
 
+.sebastien-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 85px;
+    margin: 300px 0 0 -200px;
+}
+
 .sebastien-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     width: 400px;
     height: 400px;
-    margin:0px 0 0 -200px;
+    margin: 0px 0 0 -200px;
     -webkit-animation:spin 4s linear infinite;
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
