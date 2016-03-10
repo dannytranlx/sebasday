@@ -6,30 +6,92 @@
 
 body {
     background-color: #323232;
-    padding-top: 50px;
-    padding-bottom: 20px;
+}
+
+.jumbotron {
+    margin: 0;
+    background-color: transparent;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
 
 .sebastien-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 85px;
-    margin: 300px 0 0 -200px;
+    -webkit-animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
+    -moz-animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
+    animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
+}
+
+.sebastien-text:hover {
+    -webkit-animation: neonspark .2s cubic-bezier(0, 1.21, 1, 0.06) infinite;
+    -moz-animation: neonspark .2s cubic-bezier(0, 1.21, 1, 0.06) infinite;
+    animation: neonspark .2s cubic-bezier(0, 1.21, 1, 0.06) infinite;
 }
 
 .sebastien-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin: 0px 0 0 -200px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+    max-width: 80%;
+    -webkit-animation: spin 1.3s cubic-bezier(0.82, -0.12, 0.13, 0.84) infinite;
+    -moz-animation: spin 1.3s cubic-bezier(0.82, -0.12, 0.13, 0.84) infinite;
+    animation: spin 1.3s cubic-bezier(0.82, -0.12, 0.13, 0.84) infinite;
+}
+.sebastien-logo:hover {
+    -webkit-animation: spin .3s linear infinite;
+    -moz-animation: spin .3s linear infinite;
+    animation: spin .3s linear infinite;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+@-moz-keyframes neonspark  {
+    0% {
+		opacity: 1;
+	}
+	80% {
+		opacity: .9;
+        transform: translate(3px,1px);
+	}
+    85% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes neonspark  {
+    0% {
+		opacity: 1;
+	}
+	80% {
+		opacity: .9;
+        transform: translate(3px,1px);
+	}
+    85% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes neonspark  {
+	0% {
+		opacity: 1;
+	}
+	80% {
+		opacity: .9;
+        transform: translate(3px,1px);
+	}
+    85% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+	}
+}
