@@ -27,6 +27,7 @@ body {
 }
 
 .sebastien-text {
+	cursor: pointer;
     -webkit-animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
     -moz-animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
     animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
@@ -38,7 +39,14 @@ body {
     animation: neonspark .2s cubic-bezier(0, 1.21, 1, 0.06) infinite;
 }
 
+.sebastien-text:active {
+    -webkit-animation: neonspark .1s cubic-bezier(0, 1.21, 1, 0.06) infinite;
+    -moz-animation: neonspark .1s cubic-bezier(0, 1.21, 1, 0.06) infinite;
+    animation: neonspark .1s cubic-bezier(0, 1.21, 1, 0.06) infinite;
+}
+
 .sebastien-logo {
+	cursor: pointer;
     max-width: 80%;
     -webkit-animation: spin 1.3s cubic-bezier(0.82, -0.12, 0.13, 0.84) infinite;
     -moz-animation: spin 1.3s cubic-bezier(0.82, -0.12, 0.13, 0.84) infinite;
@@ -49,6 +57,12 @@ body {
     -webkit-animation: spin .3s linear infinite;
     -moz-animation: spin .3s linear infinite;
     animation: spin .3s linear infinite;
+}
+
+.sebastien-logo:active {
+    -webkit-animation: spin .1s linear infinite;
+    -moz-animation: spin .1s linear infinite;
+    animation: spin .1s linear infinite;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
