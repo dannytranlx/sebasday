@@ -21,13 +21,18 @@ body {
   align-items: center;
 }
 
+.hover_effect {
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
+
 .sebastien-text {
     -webkit-animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
     -moz-animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
     animation: neonspark 1.4s cubic-bezier(0, 1.21, 1, 0.06) infinite;
 }
 
-.sebastien-text:hover {
+.sebastien-text:hover, .sebastien-text.hover_effect {
     -webkit-animation: neonspark .2s cubic-bezier(0, 1.21, 1, 0.06) infinite;
     -moz-animation: neonspark .2s cubic-bezier(0, 1.21, 1, 0.06) infinite;
     animation: neonspark .2s cubic-bezier(0, 1.21, 1, 0.06) infinite;
@@ -39,11 +44,13 @@ body {
     -moz-animation: spin 1.3s cubic-bezier(0.82, -0.12, 0.13, 0.84) infinite;
     animation: spin 1.3s cubic-bezier(0.82, -0.12, 0.13, 0.84) infinite;
 }
-.sebastien-logo:hover {
+
+.sebastien-logo:hover, .sebastien-logo.hover_effect {
     -webkit-animation: spin .3s linear infinite;
     -moz-animation: spin .3s linear infinite;
     animation: spin .3s linear infinite;
 }
+
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
